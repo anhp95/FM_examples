@@ -1,0 +1,12 @@
+**/__pycache__/
+**/*.py[cod]
+*.so
+.env
+.vscode/
+.idea/
+
+**/cache/
+**/logs/
+**/tiny_multicrop/
+**/html/
+.DS_Store

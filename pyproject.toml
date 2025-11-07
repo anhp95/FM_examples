@@ -1,0 +1,18 @@
+[project]
+name = "sample-workflow"
+version = "0.1.0"
+description = "Sample workflow for fine-tuning PrithviT models using TerraTorch."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandoc>=2.4",
+    "terratorch",
+]
+
+[tool.uv.workspace]
+members = [
+    "sample_workflow",
+]
+
+[tool.uv.sources]
+terratorch = { git = "https://github.com/IBM/terratorch.git" }
