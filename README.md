@@ -7,7 +7,7 @@ This guide provides a sample workflow for fine-tuning **PrithviT** models using 
 ## 1. Installation
 
 ### 1.1 Install Python
-Make sure you have **Python 3.10+** installed on your system.  
+Make sure you have **Python 3.12+** installed on your system.  
 You can verify your version with:
 ```bash
 python --version
@@ -31,8 +31,8 @@ This will create or update your virtual environment based on the project configu
 ---
 
 ✅ **Next Steps**
-- Configure your dataset paths.
-- Start the fine-tuning script using TerraTorch.
+- Configure your dataset paths in example.py.
+- Start the fine-tuning script.
 - Evaluate and visualize the model outputs.
 
 ---
