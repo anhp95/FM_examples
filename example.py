@@ -24,7 +24,7 @@ from lightning.pytorch.callbacks import ModelCheckpoint
 
 
 # %%
-DATASET_PATH = "C://prithvi_data"
+DATASET_PATH = "your/dataset/path"
 # %%
 from huggingface_hub import snapshot_download
 
@@ -39,7 +39,7 @@ _ = snapshot_download(
 # %%
 OUT_DIR = "./tiny_multicrop"  # where to save checkpoints and log files
 
-BATCH_SIZE = 2
+BATCH_SIZE = 8
 EPOCHS = 50
 LR = 2.0e-4
 WEIGHT_DECAY = 0.1
@@ -162,7 +162,7 @@ data_module = MultiTemporalCropClassificationDataModule(
 
 backbone_args = dict(
     backbone_pretrained=True,
-    backbone="prithvi_eo_v2_600_tl",  # prithvi_eo_v2_300, prithvi_eo_v2_300_tl, prithvi_eo_v2_600, prithvi_eo_v2_600_tl
+    backbone="prithvi_eo_v2_100_tl",  # prithvi_eo_v2_300, prithvi_eo_v2_300_tl, prithvi_eo_v2_600, prithvi_eo_v2_600_tl
     backbone_coords_encoding=["time", "location"],
     backbone_bands=BANDS,
     backbone_num_frames=NUM_FRAMES,
@@ -177,9 +177,9 @@ decoder_args = dict(
 necks = [
     dict(
         name="SelectIndices",
-        # indices=[2, 5, 8, 11],  # indices for prithvi_vit_100
+        indices=[2, 5, 8, 11],  # indices for prithvi_vit_100
         # indices=[5, 11, 17, 23],  # indices for prithvi_eo_v2_300
-        indices=[7, 15, 23, 31],  # indices for prithvi_eo_v2_600
+        # indices=[7, 15, 23, 31],  # indices for prithvi_eo_v2_600
     ),
     dict(
         name="ReshapeTokensToImage",
@@ -214,7 +214,8 @@ model = SemanticSegmentationTask(
 # %%
 trainer.fit(model, datamodule=data_module)
 # %%
-ckpt_path = checkpoint_callback.best_model_path
+# ckpt_path = checkpoint_callback.best_model_path
+ckpt_path = "./tiny_multicrop/multicrop_example/checkpoints/100_best_e49.ckpt"
 
 # Test results
 test_results = trainer.test(model, datamodule=data_module, ckpt_path=ckpt_path)
