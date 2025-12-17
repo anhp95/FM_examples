@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GosaikundaAndAsociatedLakes.shp</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="GosaikundaAndAsociatedLakes" id="S_GosaikundaAndAsociatedLakes_IIDDDSSIS">
+		<SimpleField type="int" name="OBJECTID_1"><displayName>&lt;b&gt;OBJECTID_1&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="ramsarid"><displayName>&lt;b&gt;ramsarid&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="area_m2"><displayName>&lt;b&gt;area_m2&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Shape_Area"><displayName>&lt;b&gt;Shape_Area&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="area_off"><displayName>&lt;b&gt;area_off&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="country_en"><displayName>&lt;b&gt;country_en&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="officialna"><displayName>&lt;b&gt;officialna&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="v_idris"><displayName>&lt;b&gt;v_idris&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="iso3"><displayName>&lt;b&gt;iso3&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>OBJECTID_1</b></td><td>$[GosaikundaAndAsociatedLakes/OBJECTID_1]</td></tr>
+  <tr><td><b>ramsarid</b></td><td>$[GosaikundaAndAsociatedLakes/ramsarid]</td></tr>
+  <tr><td><b>area_m2</b></td><td>$[GosaikundaAndAsociatedLakes/area_m2]</td></tr>
+  <tr><td><b>Shape_Area</b></td><td>$[GosaikundaAndAsociatedLakes/Shape_Area]</td></tr>
+  <tr><td><b>area_off</b></td><td>$[GosaikundaAndAsociatedLakes/area_off]</td></tr>
+  <tr><td><b>country_en</b></td><td>$[GosaikundaAndAsociatedLakes/country_en]</td></tr>
+  <tr><td><b>officialna</b></td><td>$[GosaikundaAndAsociatedLakes/officialna]</td></tr>
+  <tr><td><b>v_idris</b></td><td>$[GosaikundaAndAsociatedLakes/v_idris]</td></tr>
+  <tr><td><b>iso3</b></td><td>$[GosaikundaAndAsociatedLakes/iso3]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+		</PolyStyle>
+	</Style>
+	<Folder id="layer 0">
+		<name>GosaikundaAndAsociatedLakes</name>
+		<Placemark>
+			<styleUrl>#falseColor</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_GosaikundaAndAsociatedLakes_IIDDDSSIS">
+					<SimpleData name="OBJECTID_1">7</SimpleData>
+					<SimpleData name="ramsarid">0</SimpleData>
+					<SimpleData name="area_m2">2.88703e+07</SimpleData>
+					<SimpleData name="Shape_Area">2887.03</SimpleData>
+					<SimpleData name="area_off">0</SimpleData>
+					<SimpleData name="country_en">Neppal</SimpleData>
+					<SimpleData name="officialna">Gosaikunda and Associated Lakes</SimpleData>
+					<SimpleData name="v_idris">0</SimpleData>
+					<SimpleData name="iso3">NPL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							85.37843904647372,28.06263014470924,0 85.38065077533848,28.05680204747866,0 85.37974556185536,28.05288700960081,0 85.38537302080742,28.04746025665132,0 85.39049652953834,28.04022756614701,0 85.39200370411129,28.03470279450444,0 85.3962219636241,28.03510405273592,0 85.40124292896468,28.03711065677629,0 85.40415914148673,28.04073144127799,0 85.40435980844846,28.0417347372166,0 85.40425726992699,28.04806225925229,0 85.40505993186298,28.05419345803101,0 85.40666963018919,28.05590133813939,0 85.41108865237923,28.05328825990012,0 85.41852196546849,28.05509426649039,0 85.42177712457327,28.05713647355929,0 85.42515261533701,28.05750655918136,0 85.42605785919221,28.06052093577081,0 85.42836762280298,28.06313394945716,0 85.43299173480101,28.06363343673118,0 85.43539966839013,28.0653412141352,0 85.43761135926513,28.07006343290617,0 85.43710747948991,28.07247582855301,0 85.43640737633234,28.0742861862771,0 85.43539966839013,28.07609211448936,0 85.43409756200278,28.07739863674314,0 85.43519895887516,28.08081430422679,0 85.4315826756248,28.08241962730838,0 85.42716367051167,28.08302601768549,0 85.42756499091551,28.08523324599965,0 85.42595969145962,28.08794891034421,0 85.42113500490952,28.08855084525717,0 85.41591336687596,28.08935351428989,0 85.41289904346671,28.08835022200743,0 85.41108865237923,28.08734245089563,0 85.40687028786233,28.08714177902911,0 85.40375788409973,28.0871417871409,0 85.40154615053672,28.08613849196588,0 85.39833112805997,28.08624108159251,0 85.39591879108207,28.0865398443048,0 85.39380961173417,28.08724435455222,0 85.3926056799874,28.08604037586847,0 85.38547110441279,28.08473384159522,0 85.38245674507088,28.08372614983163,0 85.38034759471168,28.08151886396239,0 85.38065077533848,28.08161699074976,0 85.37914360111586,28.07970843040252,0 85.37803775667548,28.07739866971133,0 85.37542477007331,28.07237328184785,0 85.37422074630318,28.0660458145285,0 85.37843904647372,28.06263014470924,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

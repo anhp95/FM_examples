@@ -1,6 +1,6 @@
-# Fine-tuning PrithviT Models with TerraTorch
+# Fine-tuning Prithvi Models with TerraTorch
 
-This guide provides a sample workflow for fine-tuning **PrithviT** models using **TerraTorch**.
+This guide provides a sample workflow for fine-tuning **Prithvi** models using **TerraTorch**.
 
 ---
 
@@ -38,4 +38,4 @@ This will create or update your virtual environment based on the project configu
 ---
 
 **Reference:**  
-- [PrithviT GitHub Repository](https://github.com/NASA-IMPACT/Prithvi-EO-2.0)  
+- [Prithvi GitHub Repository](https://github.com/NASA-IMPACT/Prithvi-EO-2.0)  
